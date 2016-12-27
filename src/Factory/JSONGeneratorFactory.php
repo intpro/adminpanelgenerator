@@ -19,7 +19,7 @@ use Interpro\AdminPanelGenerator\Widgets\JSON\Scalar\StringFieldWidget;
 use Interpro\AdminPanelGenerator\Widgets\JSON\Scalar\TextFieldWidget;
 use Interpro\AdminPanelGenerator\Widgets\JSON\SEO\SEOFieldWidget;
 use Interpro\Core\Contracts\Taxonomy\Taxonomy;
-use Interpro\Origin\Concept\Enum\TypeRank;
+use Interpro\Core\Taxonomy\Enum\TypeRank;
 
 class JSONGeneratorFactory implements GeneratorFactoryInterface
 {
@@ -43,8 +43,8 @@ class JSONGeneratorFactory implements GeneratorFactoryInterface
         $familyCollection = new WidgetsFamiliesCollection();
         $widgetProvider = new WidgetProvider($familyCollection);
 
-        $qsagr = $this->taxonomy->getFamily('qsaggr');
-        $family = new WidgetsCollection('qsaggr');
+        $qsagr = $this->taxonomy->getFamily('qs');
+        $family = new WidgetsCollection('qs');
         $familyCollection->addWidgets($family);
 
         foreach($qsagr as $type)

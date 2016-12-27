@@ -6,9 +6,7 @@ use Illuminate\Bus\Dispatcher;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\ServiceProvider;
 
-class GeneratorDeferServiceProvider extends ServiceProvider {
-
-    protected $defer = true;
+class GeneratorServiceProvider extends ServiceProvider {
 
     /**
      * @return void
