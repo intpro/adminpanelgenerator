@@ -3,7 +3,7 @@
 namespace Interpro\AdminPanelGenerator\Widgets\JSON\Scalar;
 
 use Interpro\AdminPanelGenerator\Contracts\Widgets\OwnFieldWidget;
-use Interpro\Core\Contracts\Taxonomy\Types\ScalarType;
+use Interpro\Core\Contracts\Taxonomy\Types\CType;
 
 abstract class ScalarFieldWidget implements OwnFieldWidget
 {
@@ -12,11 +12,11 @@ abstract class ScalarFieldWidget implements OwnFieldWidget
 
     /**
      * @param string $name
-     * @param \Interpro\Core\Contracts\Taxonomy\Types\ScalarType $type
+     * @param \Interpro\Core\Contracts\Taxonomy\Types\CType $type
      *
      * @return void
      */
-    public function __construct($name, ScalarType $type)
+    public function __construct($name, CType $type)
     {
         $this->name = $name;
         $this->type = $type;

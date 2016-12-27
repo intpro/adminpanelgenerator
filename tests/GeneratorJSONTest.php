@@ -26,7 +26,7 @@ class GeneratorJSONTest extends TestCase
 
     public function setUp()
     {
-        $this->createApplication();
+        parent::setUp();
 
         $this->taxonomyFactory = new \Interpro\Core\Taxonomy\Factory\TaxonomyFactory();
     }
