@@ -41,7 +41,6 @@ class GeneratorDeferServiceProvider extends ServiceProvider {
     }
 
     /**
-     * Register the application services.
      *
      * @return void
      */
