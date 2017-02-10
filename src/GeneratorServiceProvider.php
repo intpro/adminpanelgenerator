@@ -49,33 +49,33 @@ class GeneratorServiceProvider extends ServiceProvider {
             'Interpro\AdminPanelGenerator\Factory\JSONGeneratorFactory'
         );
 
-        $this->app->singleton(
-            'Interpro\AdminPanelGenerator\Contracts\Generator',
-            function($app)
-            {
-                $factory = $app->make('Interpro\AdminPanelGenerator\Contracts\Factory\GeneratorFactory');
-                return $factory->createGenerator();
-            }
-        );
+//        $this->app->singleton(
+//            'Interpro\AdminPanelGenerator\Contracts\Generator',
+//            function($app)
+//            {
+//                $factory = $app->make('Interpro\AdminPanelGenerator\Contracts\Factory\GeneratorFactory');
+//                return $factory->createGenerator();
+//            }
+//        );
 
-        //Регистрация команд
-        $this->app->singleton(
-            'generate:page.command',
-            'Interpro\AdminPanelGenerator\Commands\GeneratePage'
-        );
-
-        $this->commands(['generate:page.command']);
+//        //Регистрация команд
+//        $this->app->singleton(
+//            'generate:page.command',
+//            'Interpro\AdminPanelGenerator\Commands\GeneratePage'
+//        );
+//
+//        $this->commands(['generate:page.command']);
     }
 
-    /**
-     * @return array
-     */
-    public function provides()
-    {
-        return [
-            'generate:widget.command', 'generate:page.command',
-            'Interpro\AdminPanelGenerator\Contracts\Generator'
-        ];
-    }
+//    /**
+//     * @return array
+//     */
+//    public function provides()
+//    {
+//        return [
+//            'generate:widget.command', 'generate:page.command',
+//            'Interpro\AdminPanelGenerator\Contracts\Generator'
+//        ];
+//    }
 
 }

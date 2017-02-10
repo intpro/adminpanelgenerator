@@ -43,8 +43,8 @@ class JSONGeneratorFactory implements GeneratorFactoryInterface
         $familyCollection = new WidgetsFamiliesCollection();
         $widgetProvider = new WidgetProvider($familyCollection);
 
-        $qsagr = $this->taxonomy->getFamily('qs');
-        $family = new WidgetsCollection('qs');
+        $qsagr = $this->taxonomy->getFamily('qsaggr');
+        $family = new WidgetsCollection('qsaggr');
         $familyCollection->addWidgets($family);
 
         foreach($qsagr as $type)
