@@ -3,7 +3,7 @@
     "description": "Генератор административной панели.",
     "version": "1.0.6",
     "require": {
-        "interpro/core": "1.0.*"
+        "interpro/core": "1.1.*"
     },
     "keywords": [
         "adminpanelgenerator"
