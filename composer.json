@@ -1,7 +1,7 @@
 {
     "name": "interpro/adminpanelgenerator",
     "description": "Генератор административной панели.",
-    "version": "1.0.6",
+    "version": "1.0.8",
     "require": {
         "interpro/core": "1.1.*"
     },
